@@ -7,3 +7,19 @@ describe('Array', function() {
     });
   });
 });
+
+var chai = require('chai');
+
+var assert = chai.assert;
+
+var foo = "bar";
+var tea = {'flavors':[23,32,55]};
+describe('hello',function(){
+
+
+assert.typeOf(foo, 'string');
+assert.equal(foo, 'bar');
+assert.lengthOf(foo, 3)
+assert.property(tea, 'flavors');
+assert.lengthOf(tea.flavors, 3);
+});
